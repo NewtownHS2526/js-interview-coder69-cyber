@@ -13,6 +13,11 @@ function easyProblem1(ticketType, age) {
     // TODO: Write your code here
     // Use === to check if ticketType equals "VIP" AND age equals 16
     // Return "can access" if true, otherwise "go home"
+    if (ticketType === "VIP" && age === 16) {
+        return "can access";
+    } else {
+        return "go home";
+    }
 }
 
 // Test your code:
@@ -28,6 +33,11 @@ function easyProblem2(ticketType, age) {
     // TODO: Write your code here
     // Check if age is 16 AND ticketType is NOT "VIP"
     // Return "can sign in" if true, otherwise "go home"
+    if (age === 16 && ticketType !== "VIP") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
 }
 
 // Test your code:
@@ -44,6 +54,13 @@ function mediumProblem(ticketType, age) {
     // Use if-else if-else with && operator
     // Make sure to check all three conditions correctly
     // Remember: && means BOTH conditions must be true
+    if (ticketType === "VIP" && age === 16) {
+        return "can access";
+    } else if (age === 16 && ticketType !== "VIP") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
 }
 
 // Test your code:
@@ -66,6 +83,15 @@ function hardProblem(ticketType, age) {
     //   - If age is NOT 16:
     //     - Return "go home"
     // Use nested if-else statements!
+    if (age === 16) {
+        if (ticketType === "VIP") {
+            return "can access";
+        } else {
+            return "can sign in";
+        }
+    } else {
+        return "go home";
+    }
 }
 
 // Test your code:
